@@ -1,0 +1,78 @@
+#first {
+    background: #1570e7;
+    height: 34%;
+}
+#second {
+    background: #ff0040;
+    height: 45%;
+}
+#third {
+    background: #1570e7;
+    height: 40%;
+}
+#hello {
+    background: #ff0040;
+    height: 57%;
+}
+#fifth {
+    background: #1570e7;
+    height: 29%;
+}
+#sixth {
+    background: #ff0040;
+    height: 121%;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #f50b619f;
+    margin-left: 114px;
+    margin-bottom: 20px;
+}
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgba(14, 222, 236, 0.877);
+    margin-bottom: 25px;
+}
+#third .owl-carousel .item {
+    position: relative;
+    overflow: hidden;
+}
+#third .owl-carousel .item img {
+    transition: all .35s;
+}
+#third .owl-carousel .item:hover img {
+    transform: scale(1.3,1.3);
+}
+.bg-overflow {
+    background: #6a22b86c;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all .4s;
+}
+#third .owl-carousel .item:hover .bg-overflow {
+    opacity: 1;
+}
+#hello .menuSlider a {
+    background-color: #f2a58b;
+    padding: 21px 30px;
+    border: 5px solid #fd5b78;
+    border-radius: 3px;
+    color: #ff9933;
+    text-decoration: none;
+}
+#hello .menuSlider a:hover {
+    background-color: #fd5b78;
+    color: #fb175f;
+    text-decoration: none;
+}
+.owl-nav {
+    color: #f1148e;
+    font-size: 25px;
+}

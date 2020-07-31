@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/owl.theme.green.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background: #008080;
+        }
+        #video {
+            margin-top: 70px;
+        }
+        #video .videoSlider a {
+            text-align: center;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-left: 4px;
+            background:#76D7EA;
+            color: #0066CC;
+            font-size: 25px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hMy5za-m5Ew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-xkn5pbvr-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X0vCh7y5ghg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="video">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="item-video" data-hash="one"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8D_V_NrzN4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item-video" data-hash="two"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YZ1gMaWHwac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item-video" data-hash="three"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-xkn5pbvr-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item-video" data-hash="four"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hMy5za-m5Ew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item-video" data-hash="five"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tLqtnGLfm4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item-video" data-hash="six"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X0vCh7y5ghg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+            <div class="videoSlider">
+                <a href="#one">one</a>
+                <a href="#two">two</a>
+                <a href="#three">three</a>
+                <a href="#four">four</a>
+                <a href="#five">five</a>
+                <a href="#six">six</a>
+            </div>
+            <!-- /.videoSlider -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#video -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#video .owl-carousel').owlCarousel({
+            items:1,
+            merge:true,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true,
+            video:true,
+            lazyLoad:true,
+            center:true,
+            responsive:{
+                    480:{
+                        items:2,
+                    },
+                    600:{
+                        items:4,
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
